@@ -21,8 +21,7 @@ body {
   display: flex; 
   flex-direction: row;
   margin: 0 0 50px 0;
-  justify-content: space-between;
-  
+  justify-content: space-between; 
 }
 
 .leftDiv {
@@ -52,7 +51,7 @@ input {
   margin-top: 10px;
 }
 
-button {
+.subscribe {
   background-color: hsl(234, 29%, 20%);
   border: 1px solid hsl(234, 29%, 20%);
   border-radius: 7px;
@@ -60,6 +59,33 @@ button {
   width: 370px;
   height: 50px;
   margin-top: 10px;
+}
+
+.containerTwo {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(234, 29%, 20%);
+  border-radius: 25px;
+  width: 374px; 
+  height: 374px; 
+  margin: 0 0 50px 0;
+  padding: 35px 37px 0 37px;
+}
+
+.dismiss {
+  background-color: hsl(234, 29%, 20%);
+  border: none;
+  border-radius: 7px;
+  color: hsl(0, 0%, 100%);
+  width: 300px;
+  height: 40px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.dismiss:hover {
+  background-image: linear-gradient(to right,hsl(346, 100%, 66%), hsl(4, 100%, 67%));
+  border: none;
+  box-shadow: 5px 10px 20px 5px hsla(4, 100%, 67%, 0.4);
 }
 
 .attribution { color: hsl(0, 0%, 100%); font-size: 11px; text-align: center; }
