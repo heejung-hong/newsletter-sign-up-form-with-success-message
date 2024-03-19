@@ -10,12 +10,57 @@ body {
   font-size: 16px;
   justify-content: center;
   align-items: center;
+  background-color: hsl(235, 18%, 26%);
+}
+
+.containerOne {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 25px;
+  width: 900px; 
+  height: 640px; 
+  display: flex; 
+  flex-direction: row;
+  margin: 0 0 50px 0;
+  justify-content: space-between;
+  
+}
+
+.leftDiv {
+  width: 450px;
+  height: 600px;
+  color: hsl(234, 29%, 20%);
+  padding: 0 35px 0 55px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0 10px 0;
+}
+
+label {
+  font-size: 14px; 
+  font-weight: 700;
+}
+
+input {
+  border: 1px solid hsl(240, 1%, 78%);
+  border-radius: 7px;
+  width: 370px;
+  height: 50px;
+  padding: 15px 0 15px 20px;
+  margin-top: 10px;
 }
 
 button {
   background-color: hsl(234, 29%, 20%);
+  border: 1px solid hsl(234, 29%, 20%);
+  border-radius: 7px;
   color: hsl(0, 0%, 100%);
+  width: 370px;
+  height: 50px;
+  margin-top: 10px;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { color: hsl(0, 0%, 100%); font-size: 11px; text-align: center; }
+.attribution a { color: hsl(231, 7%, 60%); }
