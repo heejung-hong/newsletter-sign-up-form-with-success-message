@@ -9,11 +9,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css"/>
+  <script src="./script.js" defer></script>
 </head>
 <body>
   <main>
     <!-- Sign-up form start ------->
-    <!-- <div class="containerOne">
+    <div id="blockOne">
+    <div id="containerOne">
       <div class="leftDiv">
         <div style="font-size: 55px; font-weight: 700; margin: 85px 0 0 0;">
           Stay updated!
@@ -38,29 +40,30 @@
           </div>
         </div>
 
-        <div style="margin: 45px 0 15px 0;">
+        <div id="emailForm" style="margin: 45px 0 15px 0;">
           <label for="email">Email address</label>
-          <input type="email" id="email" name="email" placeholder="email@company.com">
+          <input type="email" id="email" name="email" placeholder="email@company.com" pattern=".+@example\.com" required>
+          <button id="subscribe" onclick="subscribe()" type="submit">Subscribe to monthly newsletter</button>
         </div>
       
-        <button class="subscribe">Subscribe to monthly newsletter</button>
       </div>
       <div>
         <img src="./images/illustration-sign-up-desktop.svg" alt="Sign-up image" style="margin: 24px 24px 24px 0;">
       </div>
-    </div> -->
+    </div>
+    </div>
     <!-- Sign-up form end ------->
 
     <!-- Success message start -->
-    <div class="containerTwo">
+    <div id="containerTwo">
       <div style="width: 64px; height: 64px;">
         <img src="./images/icon-success.svg" alt="Check in circle">
       </div>      
       <div style="font-size: 36px; font-weight: 700; margin-top: 25px;">Thanks for subscribing!</div>
       <div style="font-size: 13px; width: 300px; margin-top: 15px;">
-        A confirmation email has been sent to <b>ash@loremcompany.com</b>. Please open it and click the button inside to confirm your subscription.
+        A confirmation email has been sent to <b id="emailText">ash@loremcompany.com</b>. Please open it and click the button inside to confirm your subscription.
       </div>
-      <button class="dismiss">Dismiss message</button>
+      <button id="dismiss" onclick="dismiss()">Dismiss message</button>
     </div>
     <!-- Success message end ---->
   </main>
