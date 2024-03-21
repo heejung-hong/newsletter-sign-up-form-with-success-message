@@ -45,7 +45,7 @@
 
         <div id="emailForm">
           <label for="email">Email address</label>
-          <input type="email" id="email" name="email" placeholder="email@company.com" pattern=".+@example\.com" required>
+          <input type="email" id="email" name="email" placeholder="email@company.com">
           <button id="subscribe" onclick="subscribe()" type="submit">Subscribe to monthly newsletter</button>
         </div>
       
@@ -64,7 +64,7 @@
       </div>      
       <div style="font-size: 36px; font-weight: 700; margin-top: 25px;">Thanks for subscribing!</div>
       <div class="confirmation">
-        A confirmation email has been sent to <b id="emailText">ash@loremcompany.com</b>. Please open it and click the button inside to confirm your subscription.
+        A confirmation email has been sent to <span id="emailText"></span>. Please open it and click the button inside to confirm your subscription.
       </div>
       <button id="dismiss" onclick="dismiss()">Dismiss message</button>
     </div>
