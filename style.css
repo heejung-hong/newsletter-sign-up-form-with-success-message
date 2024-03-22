@@ -11,10 +11,6 @@ body {
   align-items: center;
 }
 
-#error {
-  color: hsl(4, 100%, 67%);
-}
-
 @media only screen and (min-width: 450px) {
   /*--- For mobile: --------*/
   body {
@@ -56,9 +52,13 @@ body {
     margin: 10px 0 10px 0;
   }
   
-  label {
+  label, .errorLabel {
     font-size: 14px; 
     font-weight: 700;
+  }
+
+  .errorLabel {
+    color: hsl(4, 100%, 67%);
   }
   
   input {
@@ -68,16 +68,18 @@ body {
     height: 50px;
     padding: 15px 0 15px 20px;
     margin-top: 10px;
+    cursor: pointer;
   }
   
   #subscribe {
     background-color: hsl(234, 29%, 20%);
-    border: 1px solid hsl(234, 29%, 20%);
+    border: none;
     border-radius: 7px;
     color: hsl(0, 0%, 100%);
     width: 340px;
     height: 50px;
     margin-top: 10px;
+    cursor: pointer;
   } 
 
   #containerTwo {
@@ -160,9 +162,13 @@ body {
     margin: 10px 0 10px 0;
   }
   
-  label {
+  label, .errorLabel {
     font-size: 14px; 
     font-weight: 700;
+  }
+
+  .errorLabel {
+    color: hsl(4, 100%, 67%);
   }
   
   input {
@@ -172,6 +178,7 @@ body {
     height: 50px;
     padding: 15px 0 15px 20px;
     margin-top: 10px;
+    cursor: pointer;
   }
 
   #emailForm {
@@ -180,12 +187,13 @@ body {
   
   #subscribe {
     background-color: hsl(234, 29%, 20%);
-    border: 1px solid hsl(234, 29%, 20%);
+    border: none;
     border-radius: 7px;
     color: hsl(0, 0%, 100%);
     width: 370px;
     height: 50px;
     margin-top: 10px;
+    cursor: pointer;
   }  
 
   #containerTwo {
@@ -230,6 +238,13 @@ body {
   background-image: linear-gradient(to right,hsl(346, 100%, 66%), hsl(4, 100%, 67%));
   border: none;
   box-shadow: 5px 10px 20px 5px hsla(4, 100%, 67%, 0.4);
+}
+
+.subscribeActive {
+  background-image: linear-gradient(to right,hsl(346, 100%, 66%), hsl(4, 100%, 67%));
+  border: none;
+  box-shadow: 5px 10px 20px 5px hsla(4, 100%, 67%, 0.4);
+  cursor: pointer;
 }
 
 

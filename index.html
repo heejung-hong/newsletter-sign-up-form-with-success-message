@@ -44,8 +44,11 @@
         </div>
 
         <div id="emailForm">
-          <label for="email">Email address</label>
-          <span id="error"></span>
+          <div style="display: flex; justify-content: space-between;">
+            <label for="email">Email address</label>
+            <span id="error"></span>
+          </div>
+          
           <input type="email" id="email" name="email" placeholder="email@company.com" onkeyup="validateEmail()">
           <button id="subscribe" onclick="subscribe()" type="submit" disabled>Subscribe to monthly newsletter</button>
         </div>
