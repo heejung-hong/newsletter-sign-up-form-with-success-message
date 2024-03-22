@@ -14,12 +14,12 @@
 <body>
   <main>
     <!-- Sign-up form start ------->
-    <div id="blockOne">
-    <div id="containerOne">
-      <div class="mobileImage">
+    <div id="div-one">
+    <div id="container-one">
+      <div class="mobile-image">
         <img src="./images/illustration-sign-up-mobile.svg" alt="Sign-up image" style="width: 400px; height: 310px;">
       </div>
-      <div class="leftDiv">
+      <div class="div-left">
         <div class="stay">
           Stay updated!
         </div>
@@ -43,18 +43,18 @@
           </div>
         </div>
 
-        <div id="emailForm">
+        <div id="email-form">
           <div style="display: flex; justify-content: space-between;">
             <label for="email">Email address</label>
-            <span id="error"></span>
+            <span id="email-error"></span>
           </div>
           
-          <input type="email" id="email" name="email" placeholder="email@company.com" onkeyup="validateEmail()">
+          <input type="email" id="email-input" name="email" placeholder="email@company.com" onkeyup="validateEmail()">
           <button id="subscribe" onclick="subscribe()" type="submit" disabled>Subscribe to monthly newsletter</button>
         </div>
       
       </div>
-      <div class="desktopImage">
+      <div class="desktop-image">
         <img src="./images/illustration-sign-up-desktop.svg" alt="Sign-up image" style="margin: 24px 24px 24px 0;">
       </div>
     </div>
@@ -62,13 +62,13 @@
     <!-- Sign-up form end ------->
 
     <!-- Success message start -->
-    <div id="containerTwo">
+    <div id="container-two">
       <div style="width: 64px; height: 64px;">
         <img src="./images/icon-success.svg" alt="Check in circle">
       </div>      
       <div style="font-size: 36px; font-weight: 700; margin-top: 25px;">Thanks for subscribing!</div>
       <div class="confirmation">
-        A confirmation email has been sent to <span id="emailText"></span>. Please open it and click the button inside to confirm your subscription.
+        A confirmation email has been sent to <span id="email-text"></span>. Please open it and click the button inside to confirm your subscription.
       </div>
       <button id="dismiss" onclick="dismiss()">Dismiss message</button>
     </div>

@@ -13,25 +13,20 @@ body {
 
 @media only screen and (min-width: 450px) {
   /*--- For mobile: --------*/
-  body {
-    background-color: hsl(0, 0%, 100%);
-  }
+  body { background-color: hsl(0, 0%, 100%); }
 
-  #blockOne {
-    margin: 0 0 30px 0;
-  }
+  #div-one { margin: 0 0 30px 0; }
 
-  .desktopImage {
-    display: none;
-  }
-  .mobileImage {
+  .desktop-image { display: none; }
+
+  .mobile-image {
     display: block;
     width: 400px; 
     height: 310px; 
     margin: auto;
   }
   
-  .leftDiv {
+  .div-left {
     width: 340px;
     height: 400px;
     color: hsl(234, 29%, 20%);
@@ -39,81 +34,43 @@ body {
   }
 
   .stay {
-    font-size: 40px; font-weight: 700; margin: 25px 0 0 0
+    font-size: 40px; 
+    font-weight: 700; 
+    margin: 25px 0 0 0
   }
 
-  .join {
-    padding: 15px 0;
-  }
-  
+  .join { padding: 15px 0; }
+
   .list {
     display: flex;
     flex-direction: row;
-    margin: 10px 0 10px 0;
-  }
-  
-  label, .errorLabel {
-    font-size: 14px; 
-    font-weight: 700;
+    margin: 10px 0 15px 0;
   }
 
-  .errorLabel {
-    color: hsl(4, 100%, 67%);
-  }
+  #email-form { margin: 35px 0 15px 0; }
   
-  input {
-    border: 1px solid hsl(240, 1%, 78%);
-    border-radius: 7px;
-    width: 340px;
-    height: 50px;
-    padding: 15px 0 15px 20px;
-    margin-top: 10px;
-    cursor: pointer;
-  }
+  input { width: 340px; }
   
-  #subscribe {
-    background-color: hsl(234, 29%, 20%);
-    border: none;
-    border-radius: 7px;
-    color: hsl(0, 0%, 100%);
-    width: 340px;
-    height: 50px;
-    margin-top: 10px;
-    cursor: pointer;
-  } 
+  #subscribe { width: 340px; } 
 
-  #containerTwo {
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(234, 29%, 20%);
-    border-radius: 25px;
-    width: 374px; 
+  #container-two {
     height: 674px; 
     margin: 50px 0 50px 0;
     padding: 90px 37px 0 37px;
-    display: none;
   }
 
   .confirmation {
-    font-size: 13px; 
     line-height: 1.6;
     width: 280px; 
-    margin-top: 15px;
   }
   
   #dismiss {
-    background-color: hsl(234, 29%, 20%);
-    border: none;
-    border-radius: 7px;
-    color: hsl(0, 0%, 100%);
     width: 280px;
     height: 50px;
     margin-top: 200px;
-    cursor: pointer;
   }
 
-  footer {
-    display: none;
-  }
+  footer { display: none; }
 }
 
 @media only screen and (min-width: 768px) {
@@ -123,7 +80,7 @@ body {
     justify-content: center;
   }
 
-  #containerOne {
+  #container-one {
     background-color: hsl(0, 0%, 100%);
     border-radius: 25px;
     width: 900px; 
@@ -134,104 +91,113 @@ body {
     justify-content: space-between;
   }
 
-  .desktopImage {
-    display: block;
-  }
-  .mobileImage {
-    display: none;
-  }
+  .desktop-image { display: block; }
+
+  .mobile-image { display: none; }
   
-  .leftDiv {
+  .div-left {
     width: 430px;
     height: 600px;
-    color: hsl(234, 29%, 20%);
-    
+    color: hsl(234, 29%, 20%);    
   }
 
   .stay {
-    font-size: 55px; font-weight: 700; margin: 85px 0 0 0;
+    font-size: 55px; 
+    font-weight: 700; 
+    margin: 85px 0 0 0;
   }
 
-  .join {
-    padding: 30px 0;
-  }
-  
+  .join { padding: 30px 0; }
+
   .list {
     display: flex;
     flex-direction: row;
     margin: 10px 0 10px 0;
   }
-  
-  label, .errorLabel {
-    font-size: 14px; 
-    font-weight: 700;
-  }
 
-  .errorLabel {
-    color: hsl(4, 100%, 67%);
-  }
+  #email-form { margin: 45px 0 15px 0; }
   
-  input {
-    border: 1px solid hsl(240, 1%, 78%);
-    border-radius: 7px;
-    width: 370px;
-    height: 50px;
-    padding: 15px 0 15px 20px;
-    margin-top: 10px;
-    cursor: pointer;
-  }
-
-  #emailForm {
-    margin: 45px 0 15px 0;
-  }
+  input { width: 370px; }
   
-  #subscribe {
-    background-color: hsl(234, 29%, 20%);
-    border: none;
-    border-radius: 7px;
-    color: hsl(0, 0%, 100%);
-    width: 370px;
-    height: 50px;
-    margin-top: 10px;
-    cursor: pointer;
-  }  
+  #subscribe { width: 370px; }  
 
-  #containerTwo {
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(234, 29%, 20%);
-    border-radius: 25px;
-    width: 374px; 
+  #container-two { 
     height: 374px; 
     margin: 0 0 50px 0;
     padding: 35px 37px 0 37px;
-    display: none;
   }
 
-  .confirmation {
-    font-size: 13px; width: 300px; margin-top: 15px;
-  }
+  .confirmation { width: 300px; }
   
   #dismiss {
-    background-color: hsl(234, 29%, 20%);
-    border: none;
-    border-radius: 7px;
-    color: hsl(0, 0%, 100%);
     width: 300px;
     height: 40px;
     margin-top: 25px;
-    cursor: pointer;
   }
 
-  footer {
-    display: block;
-  }
+  footer { display: block; }
 
   .attribution { color: hsl(0, 0%, 100%); font-size: 11px; text-align: center; }
   .attribution a { color: hsl(231, 7%, 60%); }
 }
 
-#blockOne {
-  display: block;
+#div-one { display: block; }
+
+label, .error-label {
+  font-size: 14px; 
+  font-weight: 700;
+}
+
+.error-label { color: hsl(4, 100%, 67%); }
+
+input {
+  border: 1px solid hsl(240, 1%, 78%);
+  border-radius: 7px;
+  height: 50px;
+  padding: 15px 0 15px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#subscribe {
+  background-color: hsl(234, 29%, 20%);
+  border: none;
+  border-radius: 7px;
+  color: hsl(0, 0%, 100%);
+  height: 50px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.subscribe-active {
+  background-image: linear-gradient(to right,hsl(346, 100%, 66%), hsl(4, 100%, 67%));
+  border: none;
+  box-shadow: 5px 10px 20px 5px hsla(4, 100%, 67%, 0.4);
+  cursor: pointer;
+}
+
+#container-two {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(234, 29%, 20%);
+  border-radius: 25px;
+  height: 374px; 
+  display: none;
+}
+
+.confirmation {
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+#dismiss {
+  background-color: hsl(234, 29%, 20%);
+  border: none;
+  border-radius: 7px;
+  color: hsl(0, 0%, 100%);
+  width: 300px;
+  height: 40px;
+  margin-top: 25px;
+  cursor: pointer;
 }
 
 #dismiss:hover {
@@ -239,12 +205,3 @@ body {
   border: none;
   box-shadow: 5px 10px 20px 5px hsla(4, 100%, 67%, 0.4);
 }
-
-.subscribeActive {
-  background-image: linear-gradient(to right,hsl(346, 100%, 66%), hsl(4, 100%, 67%));
-  border: none;
-  box-shadow: 5px 10px 20px 5px hsla(4, 100%, 67%, 0.4);
-  cursor: pointer;
-}
-
-
