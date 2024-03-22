@@ -45,8 +45,9 @@
 
         <div id="emailForm">
           <label for="email">Email address</label>
-          <input type="email" id="email" name="email" placeholder="email@company.com">
-          <button id="subscribe" onclick="subscribe()" type="submit">Subscribe to monthly newsletter</button>
+          <span id="error"></span>
+          <input type="email" id="email" name="email" placeholder="email@company.com" onkeyup="validateEmail()">
+          <button id="subscribe" onclick="subscribe()" type="submit" disabled>Subscribe to monthly newsletter</button>
         </div>
       
       </div>

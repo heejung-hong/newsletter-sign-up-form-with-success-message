@@ -1,4 +1,16 @@
+let emailInput = document.getElementById("email");
+let emailError = document.getElementById("error");
 
+function validateEmail() {
+  if (emailInput.value === "" || !emailInput.value.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
+    emailError.innerHTML = "Please enter a valid email";
+    document.getElementById("subscribe").disabled = true;
+    return false;
+  } 
+  emailError.innerHTML = "";
+  document.getElementById("subscribe").disabled = false;
+  return true;
+};
 
 function subscribe() {
   let bold = document.createElement("b")
@@ -16,6 +28,7 @@ function dismiss() {
   emailValue.removeChild(emailValue.firstElementChild);
   document.getElementById("containerTwo").style.display = "none"
   document.getElementById("blockOne").style.display = "block"
+  document.getElementById("subscribe").disabled = true;
 }
 
 
