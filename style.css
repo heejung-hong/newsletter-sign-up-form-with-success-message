@@ -11,7 +11,7 @@ body {
   align-items: center;
 }
 
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 360px) {
   /*--- For mobile: --------*/
   body { background-color: hsl(0, 0%, 100%); }
 
